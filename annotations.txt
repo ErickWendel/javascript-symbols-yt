@@ -42,6 +42,10 @@ heroes.test.js
 hero.js 
     implement .iterator 
 run 
+
+show 
+    https://github.com/nodejs/node/blob/b938f88204945b02fb9a79b387c4961714fdaeb0/lib/internal/fs/dir.js#L222
+
 heroes.test.js 
     deepStrictEqual(Array.from )
     for (const hero of )
@@ -54,19 +58,12 @@ hero
     promisify randomInt 
     implement .asyncIterator
 show results
+show
+    https://blog.risingstack.com/async-iterators-in-node-js/
 npm init -y 
     test => node heroes.test.js 
-    
 
+show 
+    https://www.keithcirkel.co.uk/metaprogramming-in-es6-symbols/
 
-
-
-
-
-https://github.com/nodejs/node/blob/b938f88204945b02fb9a79b387c4961714fdaeb0/lib/internal/fs/dir.js#L222
-
-
-https://blog.risingstack.com/async-iterators-in-node-js/
-
-https://www.keithcirkel.co.uk/metaprogramming-in-es6-symbols/
-https://blog.risingstack.com/async-iterators-in-node-js/
+end
