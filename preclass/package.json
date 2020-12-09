@@ -1,0 +1,12 @@
+{
+  "name": "symbol",
+  "version": "1.0.0",
+  "description": "",
+  "main": "heroes.js",
+  "scripts": {
+    "test": "node heroes.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

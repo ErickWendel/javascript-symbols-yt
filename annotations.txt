@@ -1,0 +1,72 @@
+
+
+private functions
+inspector.js: https://github.com/nodejs/node/blob/dd5f209213a2b75bb386b44c296a059fc10dfb02/lib/inspector.js#L71
+
+crypto
+hash.js: https://github.com/nodejs/node/blob/da53a3caa306dfd31dc26fc837739571052e5c20/lib/internal/crypto/hash.js#L56
+
+promises
+promises.js: https://github.com/nodejs/node/blob/8d6c2f2ada79e52ec0b376769a7d94814945bd4f/lib/internal/fs/promises.js#L78
+
+
+create heroes.js
+    -> class Heroes 
+        -> this[kItem]
+        -> add
+
+    -> export 
+
+create heroes.test.js 
+    import heroes 
+    import deepStrictEqual 
+    
+    heroes.add 
+    console.log('heroes', heroes)
+
+    deepStrictEqual(heroes.toString(), '\nErick...')
+heroes.js 
+    implement toString()
+run 
+heroes.test.js 
+    deepStrictEqual(String(heroes), '\nErick.. ')
+    deepStrictEqual(heroes * 1, '\nErick.. ') // should give an error
+    throws(() => heroes * 1, )
+heroes.js 
+    implement .toPrimitive
+run 
+
+heroes.test.js 
+    expectedHeroItems = []
+    deepStrictEqual([...heroes])
+hero.js 
+    implement .iterator 
+run 
+heroes.test.js 
+    deepStrictEqual(Array.from )
+    for (const hero of )
+
+    implement all asyncIterator
+        console.log(ítems)
+    
+hero 
+    import crypto 
+    promisify randomInt 
+    implement .asyncIterator
+show results
+npm init -y 
+    test => node heroes.test.js 
+    
+
+
+
+
+
+
+https://github.com/nodejs/node/blob/b938f88204945b02fb9a79b387c4961714fdaeb0/lib/internal/fs/dir.js#L222
+
+
+https://blog.risingstack.com/async-iterators-in-node-js/
+
+https://www.keithcirkel.co.uk/metaprogramming-in-es6-symbols/
+https://blog.risingstack.com/async-iterators-in-node-js/
